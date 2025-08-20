@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRIME — Download Center</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #000000, #001f3f, #003366);
+      background-attachment: fixed;
+      color: #f1f1f1;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .card {
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.7);
+    }
+    pre {
+      background: rgba(0,0,0,0.8);
+      color: #39ff14;
+      font-family: monospace;
+      padding: 10px;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    h1, h2 {
+      text-shadow: 0 0 10px rgba(0,200,255,0.8);
+    }
+    .neon {
+      color: #00eaff;
+      text-shadow: 0 0 5px #00eaff, 0 0 20px #00eaff, 0 0 40px #00eaff;
+    }
+  </style>
+</head>
+<body>
+  <div class="max-w-5xl mx-auto p-6">
+    <h1 class="text-5xl font-extrabold text-center mb-2 neon">⚡ CRIME GTPS ⚡</h1>
+    <p class="text-center text-cyan-300 mb-10">Download file & ikuti tutorial sesuai perangkatmu</p>
+
+    <div class="grid gap-8 md:grid-cols-3">
+      <!-- Hosts -->
+      <div class="glass card p-6 rounded-2xl">
+        <h2 class="text-2xl font-semibold mb-3 text-cyan-200">📄 Hosts File</h2>
+        <p class="text-gray-300 text-sm mb-4">Salin atau unduh file hosts (Windows / Android):</p>
+        <pre>
+103.42.116.171 growtopia1.com
+103.42.116.171 growtopia2.com
+103.42.116.171 www.growtopia1.com
+103.42.116.171 www.growtopia2.com
+        </pre>
+        <a href="https://skyhosting.lol/hosts.txt" download
+           class="block bg-blue-600 hover:bg-blue-700 text-center py-2 mt-4 rounded-lg font-semibold">
+          ⬇️ Download Hosts.txt
+        </a>
+      </div>
+
+      <!-- Panel Tunnel -->
+      <div class="glass card p-6 rounded-2xl">
+        <h2 class="text-2xl font-semibold mb-3 text-cyan-200">🌐 Panel Tunnel</h2>
+        <p class="text-gray-300 text-sm mb-4">Konfigurasi untuk HTTP Injector / HA Tunnel / HTTP Custom:</p>
+        <a href="https://skyhosting.lol/ptunnel.txt" download
+           class="block bg-green-600 hover:bg-green-700 text-center py-2 rounded-lg font-semibold">
+          ⬇️ Download ptunnel.txt
+        </a>
+      </div>
+
+      <!-- iOS Config -->
+      <div class="glass card p-6 rounded-2xl">
+        <h2 class="text-2xl font-semibold mb-3 text-cyan-200">🍏 iOS Config</h2>
+        <p class="text-gray-300 text-sm mb-4">Profile konfigurasi (.mobileconfig) khusus iOS:</p>
+        <a href="https://skyhosting.lol/iOS.mobileconfig" download
+           class="block bg-purple-600 hover:bg-purple-700 text-center py-2 rounded-lg font-semibold">
+          ⬇️ Download iOS.mobileconfig
+        </a>
+      </div>
+    </div>
+
+    <!-- Tutorial Windows -->
+    <div class="glass mt-12 p-6 rounded-2xl card">
+      <h2 class="text-2xl font-bold mb-4 text-cyan-200">💻 Cara Pasang Hosts di Windows</h2>
+      <ol class="list-decimal list-inside text-gray-300 space-y-2 text-sm">
+        <li>Tekan <b>⊞ Win + R</b> untuk membuka <i>Run</i>.</li>
+        <li>Ketik <code>C:\Windows\System32\drivers\etc</code> lalu tekan Enter.</li>
+        <li>Klik kanan file <b>hosts</b> → pilih <b>Open with Notepad (Admin)</b>.</li>
+        <li>Tambahkan host di atas, simpan → buka ulang Growtopia.</li>
+      </ol>
+    </div>
+
+    <!-- Tutorial Android -->
+    <div class="glass mt-8 p-6 rounded-2xl card">
+      <h2 class="text-2xl font-bold mb-4 text-cyan-200">📱 Cara Pasang di Android</h2>
+      <ol class="list-decimal list-inside text-gray-300 space-y-2 text-sm">
+        <li>Download file <b>ptunnel.txt</b> dari tombol di atas.</li>
+        <li>Buka aplikasi Tunnel (HTTP Injector / HA Tunnel / HTTP Custom).</li>
+        <li>Import file konfigurasi <b>ptunnel.txt</b>.</li>
+        <li>Connect → lalu buka Growtopia.</li>
+      </ol>
+    </div>
+
+    <!-- Tutorial iOS -->
+    <div class="glass mt-8 p-6 rounded-2xl card">
+      <h2 class="text-2xl font-bold mb-4 text-cyan-200">🍎 Cara Pasang di iOS</h2>
+      <ol class="list-decimal list-inside text-gray-300 space-y-2 text-sm">
+        <li>Download file <b>iOS.mobileconfig</b> dari tombol di atas.</li>
+        <li>Buka file tersebut → otomatis masuk ke <b>Pengaturan iOS</b>.</li>
+        <li>Pilih <b>Install Profile</b> lalu konfirmasi dengan password.</li>
+        <li>Selesai → buka Growtopia.</li>
+      </ol>
+    </div>
+  </div>
+</body>
+</html>
